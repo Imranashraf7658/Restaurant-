@@ -3,231 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Royal Diner - Restaurant & Cafe</title>
-    <!-- Google Fonts -->
+    <title>The Royal Diner - Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* CSS Reset & Styling */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        body {
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background: #111;
-            color: #fff;
-            padding: 20px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: #e67e22;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 15px;
-            transition: 0.3s;
-        }
-        nav a:hover {
-            color: #e67e22;
-        }
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #fff;
-            padding: 0 20px;
-        }
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 30px;
-            max-width: 600px;
-        }
-        .btn {
-            background: #e67e22;
-            color: #fff;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 25px;
-            font-size: 16px;
-            cursor: pointer;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background: #d35400;
-        }
-        /* Sections General */
-        .section {
-            padding: 80px 20px;
-            max-width: 1100px;
-            margin: auto;
-            text-align: center;
-        }
-        .section h2 {
-            font-size: 32px;
-            margin-bottom: 15px;
-            color: #222;
-        }
-        .section p.subtitle {
-            color: #666;
-            margin-bottom: 50px;
-        }
-        /* About Section */
-        .about-content {
-            font-size: 17px;
-            color: #555;
-            max-width: 800px;
-            margin: auto;
-        }
-        /* Menu Grid */
-        .menu-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            text-align: left;
-        }
-        .menu-item {
-            background: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            transition: 0.3s;
-        }
-        .menu-item:hover {
-            transform: translateY(-5px);
-        }
-        .menu-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .menu-info {
-            padding: 20px;
-        }
-        .menu-info h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .menu-info h3 span {
-            color: #e67e22;
-        }
-        .menu-info p {
-            color: #777;
-            font-size: 14px;
-        }
-        /* Contact / Footer */
-        footer {
-            background: #111;
-            color: #fff;
-            padding: 50px 20px;
-            text-align: center;
-        }
-        footer p {
-            margin: 10px 0;
-            color: #aaa;
-            font-size: 14px;
-        }
-        /* Responsive */
-        @media(max-width: 768px) {
-            .hero h1 { font-size: 36px; }
-            header { padding: 15px 20px; }
-            nav { display: none; } /* Simple mobile fix */
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #f9f9f9; color: #333; line-height: 1.6; }
+        header { background: #111; color: #fff; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 24px; font-weight: 700; color: #e67e22; }
+        nav a { color: #fff; text-decoration: none; margin-left: 20px; font-size: 15px; transition: 0.3s; }
+        nav a:hover, nav a.active { color: #e67e22; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover; height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: #fff; padding: 0 20px; }
+        .hero h1 { font-size: 48px; margin-bottom: 15px; font-weight: 700; }
+        .hero p { font-size: 18px; margin-bottom: 30px; max-width: 600px; }
+        .btn { background: #e67e22; color: #fff; padding: 12px 30px; border: none; border-radius: 25px; font-size: 16px; cursor: pointer; text-decoration: none; transition: 0.3s; }
+        .btn:hover { background: #d35400; }
+        .section { padding: 80px 20px; max-width: 1100px; margin: auto; text-align: center; }
+        footer { background: #111; color: #fff; padding: 30px 20px; text-align: center; font-size: 14px; color: #aaa; }
     </style>
 </head>
 <body>
-
-    <!-- Header / Navbar -->
     <header>
         <div class="logo">The Royal Diner</div>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#menu">Menu</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <h1>Delicious Food, Unforgettable Experience</h1>
-        <p>Fresh ingredients, authentic recipes, and a cozy atmosphere await you at The Royal Diner.</p>
-        <a href="#menu" class="btn">Explore Menu</a>
+    <section class="hero">
+        <h1>Welcome to The Royal Diner</h1>
+        <p>Fresh ingredients, authentic recipes, and a cozy atmosphere await you.</p>
+        <a href="menu.html" class="btn">View Our Menu</a>
     </section>
-
-    <!-- About Section -->
-    <section class="section" id="about">
-        <h2>Our Story</h2>
-        <p class="subtitle">A passion for great taste</p>
-        <div class="about-content">
-            <p>Founded in 2022, The Royal Diner brings culinary excellence straight to your plate. Our master chefs combine traditional flavors with modern presentation techniques to deliver an unforgettable dining experience. Whether it's a family dinner or a casual lunch, we serve happiness in every bite.</p>
-        </div>
+    <section class="section">
+        <h2>Experience True Taste</h2>
+        <p>We serve happiness in every bite with hand-picked ingredients and master chefs.</p>
     </section>
-
-    <!-- Menu Section -->
-    <section class="section" id="menu" style="background: #fff;">
-        <h2>Featured Menu</h2>
-        <p class="subtitle">Handcrafted dishes made with love</p>
+    <footer>
+        <p>&copy; 2026 The Royal Diner. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Diner - Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #f9f9f9; color: #333; line-height: 1.6; }
+        header { background: #111; color: #fff; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 24px; font-weight: 700; color: #e67e22; }
+        nav a { color: #fff; text-decoration: none; margin-left: 20px; font-size: 15px; transition: 0.3s; }
+        nav a:hover, nav a.active { color: #e67e22; }
+        .section { padding: 60px 20px; max-width: 1100px; margin: auto; text-align: center; }
+        .section h2 { font-size: 32px; margin-bottom: 10px; color: #222; }
+        .section p.subtitle { color: #666; margin-bottom: 40px; }
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; text-align: left; }
+        .menu-item { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .menu-item img { width: 100%; height: 200px; object-fit: cover; }
+        .menu-info { padding: 20px; }
+        .menu-info h3 { font-size: 20px; margin-bottom: 10px; display: flex; justify-content: space-between; }
+        .menu-info h3 span { color: #e67e22; }
+        .menu-info p { color: #777; font-size: 14px; }
+        footer { background: #111; color: #fff; padding: 30px 20px; text-align: center; font-size: 14px; color: #aaa; margin-top: 40px;}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">The Royal Diner</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="section">
+        <h2>Our Delicious Menu</h2>
+        <p class="subtitle">Handcrafted dishes made with love and fresh ingredients</p>
         <div class="menu-grid">
             <div class="menu-item">
                 <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Burger">
                 <div class="menu-info">
                     <h3>Royal Cheese Burger <span>$12.99</span></h3>
-                    <p>Juicy beef patty with double cheddar, fresh lettuce, tomatoes, and our special secret sauce.</p>
+                    <p>Juicy beef patty with double cheddar, fresh lettuce, and special sauce.</p>
                 </div>
             </div>
             <div class="menu-item">
                 <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="Pizza">
                 <div class="menu-info">
                     <h3>Italian Supreme Pizza <span>$16.50</span></h3>
-                    <p>Wood-fired crust loaded with fresh mozzarella, pepperoni, mushrooms, and basil leaves.</p>
+                    <p>Wood-fired crust loaded with fresh mozzarella, pepperoni, and mushrooms.</p>
                 </div>
             </div>
             <div class="menu-item">
                 <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80" alt="Pasta">
                 <div class="menu-info">
                     <h3>Creamy Alfredo Pasta <span>$14.00</span></h3>
-                    <p>Fettuccine pasta tossed in rich parmesan cream sauce with grilled chicken breast.</p>
+                    <p>Fettuccine pasta tossed in rich parmesan cream sauce with grilled chicken.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Contact Section / Footer -->
-    <footer id="contact">
-        <h2>The Royal Diner</h2>
-        <p>📍 123 Food Street, Gourmet Avenue, New York</p>
-        <p>📞 +1 (555) 123-4567 | ✉️ info@royaldiner.com</p>
-        <p>🕒 Open Daily: 11:00 AM - 11:00 PM</p>
-        <p style="margin-top: 30px; font-size: 12px;">&copy; 2026 The Royal Diner. All Rights Reserved.</p>
+    <footer>
+        <p>&copy; 2026 The Royal Diner. All Rights Reserved.</p>
     </footer>
-
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Diner - Contact & About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #f9f9f9; color: #333; line-height: 1.6; }
+        header { background: #111; color: #fff; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 24px; font-weight: 700; color: #e67e22; }
+        nav a { color: #fff; text-decoration: none; margin-left: 20px; font-size: 15px; transition: 0.3s; }
+        nav a:hover, nav a.active { color: #e67e22; }
+        .section { padding: 60px 20px; max-width: 800px; margin: auto; text-align: center; }
+        .section h2 { font-size: 32px; margin-bottom: 20px; color: #222; }
+        .contact-box { background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: left; margin-top: 20px; }
+        .contact-box p { margin: 15px 0; font-size: 16px; color: #555; }
+        footer { background: #111; color: #fff; padding: 30px 20px; text-align: center; font-size: 14px; color: #aaa; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">The Royal Diner</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+    <section class="section">
+        <h2>About Us & Contact</h2>
+        <p>Founded in 2022, The Royal Diner brings culinary excellence straight to your plate. Reach out to us for reservations or inquiries.</p>
+        <div class="contact-box">
+            <p><strong>📍 Address:</strong> 123 Food Street, Gourmet Avenue, New York</p>
+            <p><strong>📞 Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>✉️ Email:</strong> info@royaldiner.com</p>
+            <p><strong>🕒 Hours:</strong> Open Daily: 11:00 AM - 11:00 PM</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 The Royal Diner. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
